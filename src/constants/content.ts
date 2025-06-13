@@ -38,5 +38,5 @@ export const FOOTER_CONTENT = {
   title: 'naotani-works',
   subtitle: 'あなたのデジタル体験を育てる',
   copyright: '© 2025 naotani-works. All rights reserved.',
-  tech: 'Powered by Next.js • Styled with Tailwind CSS • Animated with CSS3'
+  tech: ''
 } as const;

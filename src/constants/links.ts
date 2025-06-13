@@ -2,17 +2,17 @@ export const SOCIAL_LINKS = [
   { 
     icon: '🐙', 
     name: 'GitHub', 
-    href: 'https://github.com/naotani' 
+    href: 'https://github.com/Naoya-Otani' 
   },
   { 
     icon: '💼', 
     name: 'LinkedIn', 
-    href: 'https://linkedin.com/in/naotani' 
+    href: 'https://linkedin.com/in/naoya_dev' 
   },
   { 
     icon: '🐦', 
     name: 'Twitter', 
-    href: 'https://twitter.com/naotani' 
+    href: 'https://twitter.com/_naotani' 
   },
   { 
     icon: '📧', 
@@ -23,5 +23,5 @@ export const SOCIAL_LINKS = [
 
 export const CONTACT_LINKS = {
   email: 'mailto:contact@naotani.works',
-  github: 'https://github.com/naotani',
+  github: 'https://github.com/Naoya-Otani',
 } as const;
