@@ -11,7 +11,7 @@ interface HeroContentProps {
 const HeroContent: React.FC<HeroContentProps> = ({ isLoaded }) => {
   return (
     <div className="relative z-10 w-full h-full flex flex-col justify-center items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="text-center space-y-4 sm:space-y-6 lg:space-y-8">
+      <div className="text-center space-y-8 sm:space-y-12 lg:space-y-16">
         {/* Welcome Message */}
         <WelcomeMessage isLoaded={isLoaded} />
         
@@ -31,7 +31,7 @@ const HeroContent: React.FC<HeroContentProps> = ({ isLoaded }) => {
             <div className="absolute inset-0 bg-gradient-to-r from-green-700 to-emerald-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full" />
             
             <span className="relative z-10 flex items-center gap-3">
-              <svg className="w-6 h-6 animate-spin-slow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707" />
               </svg>
               {CTA_BUTTONS.explore}
@@ -43,7 +43,7 @@ const HeroContent: React.FC<HeroContentProps> = ({ isLoaded }) => {
           <button className="group relative px-10 py-5 rounded-full border-3 border-green-600 text-green-800 font-bold text-lg backdrop-blur-lg bg-green-50/20 transition-all duration-500 hover:bg-green-600 hover:text-white hover:scale-110 hover:shadow-xl transform-gpu">
             <span className="relative z-10 flex items-center gap-3">
               {CTA_BUTTONS.connect}
-              <svg className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064" />
               </svg>
             </span>

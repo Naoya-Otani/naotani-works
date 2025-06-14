@@ -4,14 +4,22 @@ interface FloatingEmojiProps {
 }
 
 export default function FloatingEmoji({ emoji, index }: FloatingEmojiProps) {
+  // Static positions instead of orbital calculation
+  const positions = [
+    { left: '20%', top: '30%' },
+    { left: '80%', top: '20%' },
+    { left: '90%', top: '70%' },
+    { left: '15%', top: '80%' },
+  ];
+  
+  const position = positions[index % positions.length];
+  
   return (
     <div
-      className="absolute text-2xl animate-orbit"
+      className="absolute text-2xl"
       style={{
-        left: `${50 + Math.cos(index * Math.PI / 2) * 40}%`,
-        top: `${50 + Math.sin(index * Math.PI / 2) * 40}%`,
-        animationDelay: `${index * 0.5}s`,
-        animationDuration: '8s',
+        left: position.left,
+        top: position.top,
       }}
     >
       {emoji}

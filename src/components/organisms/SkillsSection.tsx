@@ -20,7 +20,7 @@ export default function SkillsSection() {
           >
             <div className={`absolute inset-0 bg-gradient-to-br ${category.color} opacity-20 rounded-3xl blur-xl transform group-hover:scale-110 transition-transform duration-500`} />
             
-            <div className="relative bg-gradient-to-br from-green-50/30 to-amber-50/40 backdrop-blur-xl rounded-3xl border-2 border-green-200/50 p-8 shadow-2xl transform hover:scale-105 hover:rotate-2 transition-all duration-500 h-full overflow-hidden">
+            <div className="relative bg-gradient-to-br from-green-50/30 to-amber-50/40 backdrop-blur-xl rounded-3xl border-2 border-green-200/50 p-8 shadow-2xl transform hover:scale-105 transition-all duration-500 h-full overflow-hidden">
               {/* Organic decorations */}
               <div className="absolute top-2 right-2 opacity-30">
                 <svg width="30" height="30" viewBox="0 0 30 30">

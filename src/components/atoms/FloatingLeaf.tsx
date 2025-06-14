@@ -35,16 +35,16 @@ const FloatingLeaf: React.FC<FloatingLeafProps> = ({
 
   const leafColor = useMemo(() => {
     if (!isMounted) {
-      return "hsl(30, 50%, 40%)"; // Default color for SSR
+      return "hsl(120, 50%, 40%)"; // Default green color for SSR
     }
-    return `hsl(${25 + Math.random() * 15}, ${40 + Math.random() * 20}%, ${35 + Math.random() * 15}%)`;
+    return `hsl(${100 + Math.random() * 40}, ${50 + Math.random() * 30}%, ${35 + Math.random() * 20}%)`;
   }, [isMounted]);
 
   const stemColor = useMemo(() => {
     if (!isMounted) {
-      return "hsl(25, 70%, 30%)"; // Default color for SSR
+      return "hsl(90, 70%, 30%)"; // Default green stem color for SSR
     }
-    return `hsl(${20 + Math.random() * 10}, ${60 + Math.random() * 20}%, ${25 + Math.random() * 10}%)`;
+    return `hsl(${80 + Math.random() * 20}, ${60 + Math.random() * 20}%, ${25 + Math.random() * 10}%)`;
   }, [isMounted]);
 
   const scrollMultiplier = useMemo(() => {

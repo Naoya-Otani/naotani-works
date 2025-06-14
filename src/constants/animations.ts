@@ -14,7 +14,7 @@ export const ANIMATION_DURATIONS = {
 } as const;
 
 export const FLOATING_ELEMENT_CONFIG = {
-  count: 15,
+  count: 30,
   maxDelay: 8,
   baseDuration: 15,
   maxDurationVariation: 10,

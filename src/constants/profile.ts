@@ -5,9 +5,8 @@ export interface RoleItem {
 
 export const PROFILE = {
   name: 'Naoya Otani',
-  welcomeMessage: '🌱 自然の中へようこそ 🌱',
-  tagline: 'デジタルの森で 体験を育てる',
-  highlightText: '体験を育てる',
+  welcomeMessage: '🌱 ようこそ 🌱',
+  tagline: 'ソフトウェアの力で、あなたの課題を解決します',
 } as const;
 
 export const ROLES: RoleItem[] = [

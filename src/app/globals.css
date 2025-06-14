@@ -8,8 +8,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-noto-sans-jp);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,7 +21,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-noto-sans-jp), sans-serif;
 }
 
 /* Viewport height utilities for mobile compatibility */
@@ -41,35 +40,35 @@ body {
 /* Natural Organic Animations */
 @keyframes natural-float {
   0%, 100% {
-    transform: translate(0, 0) rotate(0deg);
+    transform: translate(0, 0);
     opacity: 0.2;
   }
   25% {
-    transform: translate(10px, -20px) rotate(5deg);
+    transform: translate(10px, -20px);
     opacity: 0.4;
   }
   50% {
-    transform: translate(-5px, -10px) rotate(-3deg);
+    transform: translate(-5px, -10px);
     opacity: 0.6;
   }
   75% {
-    transform: translate(-15px, 5px) rotate(8deg);
+    transform: translate(-15px, 5px);
     opacity: 0.3;
   }
 }
 
 @keyframes sway {
   0%, 100% {
-    transform: rotate(0deg) translateX(0);
+    transform: translateX(0);
   }
   25% {
-    transform: rotate(2deg) translateX(2px);
+    transform: translateX(2px);
   }
   50% {
-    transform: rotate(0deg) translateX(0);
+    transform: translateX(0);
   }
   75% {
-    transform: rotate(-2deg) translateX(-2px);
+    transform: translateX(-2px);
   }
 }
 
@@ -93,15 +92,15 @@ body {
 
 @keyframes grow-from-seed {
   0% {
-    transform: scale(0) rotate(-180deg);
+    transform: scale(0);
     opacity: 0;
   }
   50% {
-    transform: scale(0.8) rotate(-90deg);
+    transform: scale(0.8);
     opacity: 0.7;
   }
   100% {
-    transform: scale(1) rotate(0deg);
+    transform: scale(1);
     opacity: 1;
   }
 }
@@ -138,15 +137,15 @@ body {
 @keyframes leaf-appear {
   0% {
     opacity: 0;
-    transform: scale(0) rotate(-90deg);
+    transform: scale(0);
   }
   50% {
     opacity: 0.7;
-    transform: scale(1.2) rotate(10deg);
+    transform: scale(1.2);
   }
   100% {
     opacity: 1;
-    transform: scale(1) rotate(0deg);
+    transform: scale(1);
   }
 }
 
@@ -188,30 +187,30 @@ body {
 @keyframes twinkle {
   0%, 100% {
     opacity: 0;
-    transform: scale(0) rotate(0deg);
+    transform: scale(0);
   }
   50% {
     opacity: 1;
-    transform: scale(1) rotate(180deg);
+    transform: scale(1);
   }
 }
 
 /* Revolutionary 3D Animations */
 @keyframes float-3d {
   0%, 100% {
-    transform: translateY(0) translateX(0) rotate(0deg) scale(1);
+    transform: translateY(0) translateX(0) scale(1);
     opacity: 0.3;
   }
   25% {
-    transform: translateY(-20px) translateX(10px) rotate(90deg) scale(1.2);
+    transform: translateY(-20px) translateX(10px) scale(1.2);
     opacity: 0.7;
   }
   50% {
-    transform: translateY(-10px) translateX(-15px) rotate(180deg) scale(0.8);
+    transform: translateY(-10px) translateX(-15px) scale(0.8);
     opacity: 1;
   }
   75% {
-    transform: translateY(-30px) translateX(5px) rotate(270deg) scale(1.1);
+    transform: translateY(-30px) translateX(5px) scale(1.1);
     opacity: 0.5;
   }
 }
@@ -219,32 +218,32 @@ body {
 @keyframes slide-in-3d {
   0% {
     opacity: 0;
-    transform: translateY(100px) rotateX(90deg) scale(0.8);
+    transform: translateY(100px) scale(0.8);
   }
   50% {
     opacity: 0.7;
-    transform: translateY(20px) rotateX(45deg) scale(0.95);
+    transform: translateY(20px) scale(0.95);
   }
   100% {
     opacity: 1;
-    transform: translateY(0) rotateX(0deg) scale(1);
+    transform: translateY(0) scale(1);
   }
 }
 
 @keyframes text-reveal {
   0% {
     opacity: 0;
-    transform: translateY(50px) rotateX(90deg);
+    transform: translateY(50px);
     filter: blur(10px);
   }
   50% {
     opacity: 0.5;
-    transform: translateY(10px) rotateX(45deg);
+    transform: translateY(10px);
     filter: blur(5px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0) rotateX(0deg);
+    transform: translateY(0);
     filter: blur(0px);
   }
 }
@@ -252,19 +251,15 @@ body {
 @keyframes gradient-shift {
   0%, 100% {
     background-position: 0% 50%;
-    filter: hue-rotate(0deg);
   }
   25% {
     background-position: 100% 50%;
-    filter: hue-rotate(90deg);
   }
   50% {
     background-position: 200% 50%;
-    filter: hue-rotate(180deg);
   }
   75% {
     background-position: 300% 50%;
-    filter: hue-rotate(270deg);
   }
 }
 
@@ -281,19 +276,6 @@ body {
   }
 }
 
-@keyframes orbit {
-  0% {
-    transform: rotate(0deg) translateX(20px) rotate(0deg);
-    opacity: 0;
-  }
-  10%, 90% {
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(360deg) translateX(20px) rotate(-360deg);
-    opacity: 0;
-  }
-}
 
 @keyframes pulse-text {
   0%, 100% {
@@ -324,14 +306,6 @@ body {
   }
 }
 
-@keyframes spin-slow {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 /* Legacy animations for compatibility */
 @keyframes blob {
@@ -456,9 +430,6 @@ body {
   animation: pulse-glow 2s ease-in-out infinite;
 }
 
-.animate-orbit {
-  animation: orbit 4s linear infinite;
-}
 
 .animate-pulse-text {
   animation: pulse-text 3s ease-in-out infinite;
@@ -469,9 +440,6 @@ body {
   opacity: 0;
 }
 
-.animate-spin-slow {
-  animation: spin-slow 3s linear infinite;
-}
 
 /* Perspective utility */
 .perspective-1000 {

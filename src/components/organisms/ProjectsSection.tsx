@@ -22,7 +22,7 @@ export default function ProjectsSection() {
           >
             <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-20 rounded-3xl blur-xl transform group-hover:scale-110 transition-transform duration-500`} />
             
-            <div className="relative bg-gradient-to-br from-white/20 to-amber-100/30 backdrop-blur-xl rounded-3xl border border-amber-200/40 p-8 shadow-2xl transform hover:scale-105 hover:-rotate-1 transition-all duration-500 h-full">
+            <div className="relative bg-gradient-to-br from-white/20 to-amber-100/30 backdrop-blur-xl rounded-3xl border border-amber-200/40 p-8 shadow-2xl transform hover:scale-105 transition-all duration-500 h-full">
               <div className="flex items-center gap-4 mb-6">
                 <div className={`w-12 h-12 bg-gradient-to-br ${project.gradient} rounded-xl flex items-center justify-center shadow-lg`}>
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">

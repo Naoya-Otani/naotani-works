@@ -5,7 +5,7 @@ export default function AnimatedCircle() {
   return (
     <div className="relative">
       <div className="w-64 h-64 mx-auto relative">
-        <div className="absolute inset-0 bg-gradient-to-br from-amber-400/30 to-orange-500/30 rounded-full animate-spin-slow" />
+        <div className="absolute inset-0 bg-gradient-to-br from-amber-400/30 to-orange-500/30 rounded-full" />
         <div className="absolute inset-4 bg-gradient-to-br from-white/40 to-amber-100/40 rounded-full backdrop-blur-sm flex items-center justify-center">
           <div className="text-center">
             <div className="text-6xl mb-4 animate-bounce">{CONTACT_CONTENT.circle.emoji}</div>

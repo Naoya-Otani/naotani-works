@@ -15,7 +15,7 @@ const RoleDescription: React.FC<RoleDescriptionProps> = ({ isLoaded }) => {
         </div>
         
         <p className="relative text-xl sm:text-2xl lg:text-3xl xl:text-4xl text-amber-900 font-light mb-4 sm:mb-6">
-          {PROFILE.tagline.split(' ').slice(0, 2).join(' ')} <span className="font-bold text-green-800 animate-pulse-gentle">{PROFILE.highlightText}</span>
+          {PROFILE.tagline}
         </p>
         
         <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mt-4 sm:mt-6 lg:mt-8">
